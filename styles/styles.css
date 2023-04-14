@@ -7,7 +7,6 @@
 
 /*contenido maquetado con flexbox*/
 header{
-    background: black;
     width: 95%;
     height: 20vh;
     display: flex;
@@ -107,6 +106,33 @@ main div.sobre-nosotros{
 
 /*Segundo breakpoint telefonos mayor resolución y tablets*/
 @media screen and (min-width:350px) and (max-width:720px) {
+    
+    header{
+        width: 95%;
+        height: 10vh;
+        display: flex;
+        margin: 10px auto;
+    }
+    .logo-header{
+        display: flex;
+        background-color: blue;
+        width:30%;
+        justify-content: center;
+        
+    }
+    header div.logo-header img{
+        width: auto;
+        height: auto;
+    }
+    
+    .nombre-header{
+        display: flex;
+        width: 70%;
+        background: lightcoral;
+        justify-content:center;
+        align-items: center;
+    }
+
     div.nav {
         display: flex;
         height: auto;
