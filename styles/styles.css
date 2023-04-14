@@ -108,15 +108,17 @@ main div.sobre-nosotros{
 /*Segundo breakpoint telefonos mayor resolución y tablets*/
 @media screen and (min-width:350px) and (max-width:720px) {
     div.nav {
-        height: 15vh;
+        display: flex;
+        height: auto;
     }
     div.nav nav{
         display: flex;
         flex-wrap: wrap;
         margin: 5px 5px;  
         width: 100%;
-        height: 90%;
+        height: auto;
         justify-content: center;
+        align-items:stretch;
         column-gap: 10px;
        
       }
