@@ -116,7 +116,7 @@ main div.sobre-nosotros{
     .logo-header{
         display: flex;
         background-color: blue;
-        width:30%;
+        width:25%;
         justify-content: center;
         
     }
@@ -127,7 +127,7 @@ main div.sobre-nosotros{
     
     .nombre-header{
         display: flex;
-        width: 70%;
+        width: 75%;
         background: lightcoral;
         justify-content:center;
         align-items: center;
@@ -150,6 +150,7 @@ main div.sobre-nosotros{
       }
       div.nav nav button{
         width: 20%;
+        height: 35px;
         text-align: center;   
         background-color: aqua;
       }
