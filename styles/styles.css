@@ -157,3 +157,37 @@ main div.sobre-nosotros{
 }
 
 /*Tercer breakpoint - < 720px hasta 1920px*/
+@media screen and (min-width: 721px) and (max-width:1920px){
+    div.nav{
+        display: block;
+        height: auto;
+        margin: 0  30px 0 0;
+        float: right;
+        width: 16%;
+        height: 100vh;
+        
+
+    }
+    div.nav nav{
+        display: block;
+    }
+    div.nav nav button{
+
+        width: 85%;
+        margin: 25px auto;
+        display: block;
+    }
+  
+    main.contenedor-principal div.sobre-nosotros{
+    display: inline-block;
+    width: 80%;
+  }
+
+  main.contenedor-principal div.galeria{
+    margin-top: 10px;
+    display: inline-block;
+    width: 82%;
+    background-color: aquamarine;
+  }
+
+}
