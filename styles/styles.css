@@ -1,193 +1,181 @@
 *{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+   
+    .container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: coral;
+        margin-bottom: 5px;
+        padding: 5px;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    /** Aqui comienza la configuracion del header para dispositivos moviles**/
+    
+    header.header{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        justify-content: center;
+        align-items:center ;
+    }
+   
+
+    header img.logo{
+        display: block;
+        width: 50%;
+    
+    }
+    h1.titulo{
+        text-align: center;
+        display: block;
+        color: bisque;
+        font-weight: bold;
+    }
+    /** Aqui comienza la configuracion del menu hamburguesa **/
+
+    nav{
+        border: solid coral 1px;
+        margin: 10px 10px;
+        background-color: darkgreen;
+        color: beige;
+        font-weight: bold;
+        }
+
+    nav.menu ul{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    /** Aqui comienza la seccion principal**/
+
+    section.home div.img-home{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    section div.img-home img{
+        display: block;
+        width: 100%;
+    }
+
+    /** En esta seccion empieza la galeria de imagenes**/
+
+   section.diapositiva div.item img{
+    display: inline;
+    width: 100%;
+   }
+
+   /**Acá empieza la seccion del iframe que muestra la localizacion y como llegar**/
+
+   section.location p{
+    width: 50%;
+   }
+
+   iframe.mapa{
+    width: 50%;
+    height: 70%;
+   }
+
+   /** acá empieza la seccion del formulario **/
+
+   section.container div.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+    width: 100%;
+    background-color: blueviolet;
+    justify-content: flex-start;
+    text-align: left;
+   }
+
+   section.container div.formulario input.datos{
+    width: 100%;
+    display: flex;
+   }
+   #mensaje{
+    width: 100%;
+    min-height: 100px;
+   }
+   legend{
+    text-align: center;
+   }
+
+   section.container div.curriculum{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    background-color: chartreuse;
+   }
+
+  fieldset input#upload{
+    width: 47%;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+ 
+   
+  
+
+
+   footer{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-size: 75%;
+   }
+
+   footer div.izq{
+    width:50%;
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
-}
+   }
+   
 
-
-/*contenido maquetado con flexbox*/
-header{
-    width: 95%;
-    height: 20vh;
-    display: flex;
-    margin: 10px auto;
-}
-.logo-header{
-    display: flex;
-    background-color: blue;
-    width:20%;
-    justify-content: flex-end;
+   footer div.izq ul{
     
-}
-
-.nombre-header{
-    display: flex;
-    width: 80%;
-    background: lightcoral;
-    justify-content: flex-start;
-    align-items: center;
-}
-/*Acá termina el header y comienza la barra de navegación*/
-div.nav{
-    position:sticky;
-    top: 0;
-    flex-wrap: nowrap;
-    margin: 10px auto;
-    display: flex;
-    background: red;
-    width: 95%;
-    height: 10vh;
-    justify-content:space-around;
-    align-items: center;
-  }
-  div.nav nav{
-        display: flex;
-  }
-div.nav nav button{
-    background-color: aqua;
-    font-weight: bold;
-
-}
-/*Acá termina la barra de navegación y comienza el contenido*/
-
-main{
-    width: 95%;
-    margin: 10px auto;
-
-}
-
-main div.sobre-nosotros{
-    display: flex;
-    background-color: brown;
-    padding: 1%;
-}
-
-/*Primer breakpoint - celulares baja resolucion*/
-@media screen and (max-width:349px) {
-
-    body{background-color: black;}
-
-    header div.logo-header{
-        display: none;
-    }
-
-    header div.nombre-header{
-        width: 100%;
-        justify-content: center;
-    }
-
-    div.nav{
-        flex-wrap: wrap;
-        position:sticky;
-        top: 0;
-        margin: auto;
-        background: red;
-        width: 95%;
-        height: auto;
-      }
-
-      div.nav nav{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px 5px;
-        row-gap: 10px;
-        column-gap: 10px;
-        justify-content: center;
-        
-      }
-
-      div.nav nav button{
-        text-align: justify;   
-        background-color: aqua;
-      }
-    
-
-}
-
-/*Segundo breakpoint telefonos mayor resolución y tablets*/
-@media screen and (min-width:350px) and (max-width:720px) {
-    
-    header{
-        width: 95%;
-        height: 10vh;
-        display: flex;
-        margin: 10px auto;
-    }
-    .logo-header{
-        display: flex;
-        background-color: blue;
-        width:25%;
-        justify-content: center;
-        
-    }
-    header div.logo-header img{
-        width: auto;
-        height: auto;
-    }
-    
-    .nombre-header{
-        display: flex;
-        width: 75%;
-        background: lightcoral;
-        justify-content:center;
-        align-items: center;
-    }
-
-    div.nav {
-        display: flex;
-        height: auto;
-    }
-    div.nav nav{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px 5px;  
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        align-items:stretch;
-        column-gap: 10px;
-       
-      }
-      div.nav nav button{
-        width: 20%;
-        height: 35px;
-        text-align: center;   
-        background-color: aqua;
-      }
-}
-
-/*Tercer breakpoint - < 720px hasta 1920px*/
-@media screen and (min-width: 721px) and (max-width:1920px){
-    div.nav{
-        display: block;
-        height: auto;
-        margin: 0  30px 0 0;
-        float: right;
-        width: 16%;
-        height: 100vh;
-        
-
-    }
-    div.nav nav{
-        display: block;
-    }
-    div.nav nav button{
-
-        width: 85%;
-        margin: 25px auto;
-        display: block;
-    }
-  
-    main.contenedor-principal div.sobre-nosotros{
+    text-align: left;
+    list-style-type: none;
     display: inline-block;
-    width: 80%;
-  }
+    padding: 0;
+    margin: 0;
+    width: 70%;
+    color: antiquewhite;
+   }
 
-  main.contenedor-principal div.galeria{
-    margin-top: 10px;
-    display: inline-block;
-    width: 82%;
-    background-color: aquamarine;
-  }
 
+
+   footer div.der{
+    width: 50%;
+    background-color: bisque;
+   }
+
+
+ 
+
+/*Pimer breakpoint - Dispositivos móviles */
+@media screen and (min-width: 480px){
+   header img.logo{
+    width: 25%;} 
+    
 }
+
+
+
+    
