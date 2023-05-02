@@ -13,12 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
-    <script src="https://kit.fontawesome.com/c5a16d2e36.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c5a16d2e36.js" crossorigin="anonymous" ></script>
+
+
     <title>Pizzeria La Nonna</title>
 
 
 </head>
 <body>
+
+
+
 <header class="container header">
     <img  class="logo" src="/media/logo1024px.png" alt="logo-pizeria">
     <h1 class="titulo" >Nuestra pasión es el sabor</h1>
@@ -41,17 +46,16 @@
 <section class="container home">
 
     <div class="img-home">
-        <img src="/media/piza.png" alt="imagen pizza">
+        <img src="/media/img-home.jpg" alt="imagen pizza">
 
     </div>
   
     </div>
     <div class="texto-home">
-     <p>
-        Somos un emprendimiento familiar con una profunda pasión por la comida y los sabores italianos, que día a día ponemos todo nuestro esfuerzo para darte lo mejor, y convertir esa salida a cenar en un momento inolvidable.
-     </p>
      
-     <p>
+        <p>
+        Somos un emprendimiento familiar con una profunda pasión por la comida y los sabores italianos, que día a día ponemos todo nuestro esfuerzo para darte lo mejor, y convertir esa salida a cenar en un momento inolvidable.
+
         Nuestra misión es brindar a nuestros clientes y amigos la mejor experiencia de disfrute en torno a nuestra cocina, sabores y ambiente familiar. 
 
      </p>
@@ -60,75 +64,83 @@
 
 </section>
 
-<section class="container diapositiva">
+<div class="container-slider">
 
-    <div class="item"><img src="/media/img-home.jpg" alt="imagen-mesada">  <p>Día a día seleccionamos la mejor materia prima, para traerte productos de buena calidad. <br>
-            Verduras de produccion propia.<br>
-            Bebidas nacionales e importadas.<br>
-            Amplia carta de vinos.<br>
-            Opcion take-away disponible<br>
-    
-        
-        </p></div><div class="item"> <img src="/media/Hamburguesa.jpg" alt="hamburguesa"> <p>¡Ahora también tenemos hamburguesas!  <br>
-            Dejate tentar por esta delicia. <br>
-            Con pan casero y semillas <br>Nuestras hamurguesas son riquisimas. <br> Agregale adherezos a gusto y la guarnicion que prefieras. <br>
-         
-        
-        </p></div>
+    <div  class="slider" id="slider">
 
-        <div class="item"> <img src="/media/piza.png" alt="piza foto"> 
+        <div class="slider__section">
+            <img src="/media/milanesa6.jpg" alt="" class="slider__img"> 
+            <p>Entre nuestras opciones de minutas, podes elegir: <br><br>
+                -Milanesas de carne. <br>
+                -Milanesas de pollo. <br>
+                -Milanesas de cerdo. <br>
+                -Milanesas de merluza. <br>
+                -Acompañalas con ensaladas, papas fritas o puré.
+            </p>
+        </div>
+        <div class="slider__section">
+            <img src="/media/piza2.png" alt="" class="slider__img"> 
+            <p> 
+                Elegí entre nuestras más de 20 variedades de pizza: <br><br>
+                |Masa a la piedra / Media masa. <br>
+                |Cocidanads en horno a leña. <br>
+                |Estilo italiana. <br>
+                |Masa clásica / Masa de harina integral.
+            </p>
+        </div>
+        <div class="slider__section">
+            <img src="/media/empanadas3.jpg" alt="" class="slider__img">
+            <p>Tenemos 10 variedades de empanadas para ofrecerte. <br>
+            Las podés pedir fritas o al horno. <br>
+            Con masa y rellenos caseros. <br>
+            ¡No vas a poder comer solo una!
+            </p>
+        </div>
+        <div class="slider__section">
+            <img src="/media/Hamburguesa4.jpg" alt="" class="slider__img">
+            <p>
+                ¡Ahora también tenemos hamburguesas! <br>
+                Dejate tentar por esta delicia. <br>Con pan casero y semillas. <br>
+                Nuestras hamburguesas son riquísimas. <br>
+                Agregales adherezos a gusto, y la guarnición que prefieras.
+            </p>
+        </div>
+        <div class="slider__section">
+            <img src="media/Lasagna5.jpg" alt="" class="slider__img">
+            <p>Pastas caseras al huevo. <br><br>
+                Elegí entre nuestras variedades, y agregales la salsa que más te guste: <br><br>
+                -Bolognesa <br>
+                -Fileto <br>
+                -Bechamel <br>
+                -Salsa de hongos <br>
+             </p>
+        </div>
+        <div class="slider__section">
+            <img src="media/mesada1.jpg" alt="" class="slider__img">
+            <p>Día a día, seleccionamos la mejor materia prima, para traerte productos de buena calidad. <br> <br> -Verduras de producción propia. <br>
+                -Bebidas nacionales e importadas. <br>
+                -Amplia carta de vinos. <br>
+                -Opcion take-away disponible. <br>
 
-            <p>Elegí Entre nuestras más de 
-            20 variedades de piza: <br>  </p>
-                <ul>
-                    <li>Masa a la piedra / Media masa</li>
-                    <li>Cocinadas en horno a leña</li>
-                    <li>Estilo italiana</li>
-                    <li>Masa clásica / Integral</li>
-                </ul>
-                
-          
-           
-    
-            
-        
-        </div> <div class="item"><img src="/media/empanadas.jpg" alt="empanadas"><p>Tenemos 10 variedades de empanadas para ofrecerte. Las podes pedir fritas o al horno. Con masa y rellenos caseros, no vas a poder comer solo una.
-    
-        </p> 
-    </div> 
-        <div class="item"> <img src="/media/Lasagna.jpg" alt=""><p>Pastas caseras al huevo. Elegí entre nuestras variedades y agregales la salsa que mas te guste:
-            <br>-Bolognesa
-            <br>-Fileto
-            <br>-Bechamel
-            <br>-Salsa de Hongos
-        
-        </p> </div>
-         <div class="item"> <img src="/media/milanesa.jpg" alt="milanesa con papas fritas"> <p>Entre nuestras opciones de minutas, podes elegir: <br>
-            <br>Milanesas de carne
-            <br>Milanesas de pollo
-            <br>Milanesas de cerdo
-            <br>Milanesas de merluza <br>
-            <br>Acompañalas con ensaladas, papas fritas o puré.
-        
-        </p></div>
-    
- 
+            </p>
+        </div>
 
-    
 
-    
- 
+    </div>
    
-   
 
    
-   
+    <div class="slider__btn slider__btn--left" id="btn-left"> < </div>
+    <div class="slider__btn slider__btn--right" id="btn-right" > > </div>
+</div>
+<script src="/jscript/scripts.js"></script>
 
-</section>
 
-<section class="container carta">
 
-</section>
+
+
+
+
 
 <section class="container location">
 
@@ -142,9 +154,15 @@
 
 </section>
 
-<section class="container">
+<div><p>¿Dudas? ¿Sugerencias?</p> <a onclick="mostrarContenido()"  id="mostrar" href="#formulario" >Contactanos</a>
+</div> 
+
+
+<section class="container" id="formulario">
 
     <div class="formulario">
+
+         <a onclick="ocultarContenido()"  id="cerrar" href="#formulario">X</a> 
         <form>
             <label  for="nombreapellido">Nombre y apellido:</label> <br>
             <input class="datos" type="text" id="nombreapellido"  required> <br>
@@ -158,31 +176,31 @@
             <label for="mensaje">Mensaje:</label> <br>
             <textarea id="mensaje" required></textarea>
     
-        <fieldset>
-            <legend>¿Cómo le gustaría que lo contactemos?</legend>
-            <label><input type="radio" value="email" name="contacto">E-mail</label>
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                <label><input type="radio" value="email" name="contacto">E-mail</label>
             
     
-            <label><input type="radio" value="telefono" name="contacto">Teléfono</label>
+                <label><input type="radio" value="telefono" name="contacto">Teléfono</label>
             
     
-            <label><input type="radio" value="whatsapp" checked name="contacto">Whatsapp</label>
+                <label><input type="radio" value="whatsapp" checked name="contacto">Whatsapp</label>
             
-        </fieldset> 
+             </fieldset> 
     
        
         
         
         
         
-        <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades y promociones?</label> <br>
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades y promociones?</label> <br>
             
            
     
         
-    
+        </form>
+
     </div>
-</form>
     <div class="curriculum">
 
         <fieldset>

@@ -60,21 +60,96 @@
 
     section.home div.img-home{
         display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    section div.img-home img{
+        object-fit: contain;
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+    }
+    section.home div.texto-home{
+        font-size: 1.25em;
+        font-weight: bold;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: left;
+        display: flex;
         width: 100%;
         height: auto;
         margin: 0 auto;
     }
-    section div.img-home img{
-        display: block;
-        width: 100%;
-    }
 
     /** En esta seccion empieza la galeria de imagenes**/
 
-   section.diapositiva div.item img{
-    display: inline;
+   .container-slider{
+    width: 100%;
+    max-width: 900%;
+    margin: 25px auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 15px 50px;
+    position: relative;
+    height: auto;
+   }
+   .slider{
+    display: flex;
+    width: 600%;
+    height: auto;
+    margin-left: -100;
+   }
+   .slider__section{
+    height: auto;
+    font-size: 1.25em;
+    margin: 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+   }
+  
+   .slider__img{
+    object-fit: cover;
+    margin: 10px 10px;
+    display: flex;
     width: 100%;
    }
+   .slider__btn{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(57, 49, 97, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+
+   }
+   .slider__btn:hover{
+    background-color: rgba(130, 49, 100, 0.7);
+
+   }
+   .slider__btn--left{
+    left: 10px;
+
+   }
+   .slider__btn--right{
+    right: 10px;
+    
+   }
+
+
 
    /**Acá empieza la seccion del iframe que muestra la localizacion y como llegar**/
 
@@ -88,6 +163,18 @@
    }
 
    /** acá empieza la seccion del formulario **/
+
+   section#formulario{
+    display: none;
+   }
+   a#mostrar{
+    text-decoration: none;
+   }
+   a#cerrar{
+   margin: 0 100%;
+   padding: 0 10px;
+   text-decoration: none;
+   }
 
    section.container div.formulario{
     display: flex;
