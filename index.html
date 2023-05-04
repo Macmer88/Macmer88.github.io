@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
-    <script src="https://kit.fontawesome.com/c5a16d2e36.js" crossorigin="anonymous" ></script>
 
 
     <title>Pizzeria La Nonna</title>
@@ -30,27 +29,36 @@
 
 </header>
 
-<nav class="menu">
+<div class="nav-bar">
 
-    <ul>
-        <li class="items"> <i class="fa-thin fa-house"></i> Home</li>
-        <li class="items">Galeria</li>
-        <li class="items">¿Donde estamos?</li>
-        <li class="items">Nuestra carta</li>
-        <li class="items">Contacto</li>
-    </ul>
-   
-</nav>
+    <button class="abrir-menu" id="abrir">abrir</button>
+    <nav class="nav" id="nav">
+
+        <button class="cerrar-menu" id="cerrar">cerrar</button>
+    
+        <ul class="nav-list">
+            <li class="items"> <a href="#home">Home</a></li>
+            <li class="items"><a href="#galeria">Galeria</a></li>
+            <li class="items"><a href="#carta">Nuestra carta</a></li>
+            <li class="items"><a href="#location">¿Donde estamos</a></li>
+            <li class="items"><a href="#contacto">Contacto</a></li>
+        </ul>
+       
+    
+    </nav>
+</div>
 
 
-<section class="container home">
+
+
+<section class="container" id="home">
 
     <div class="img-home">
         <img src="/media/img-home.jpg" alt="imagen pizza">
 
     </div>
   
-    </div>
+    
     <div class="texto-home">
      
         <p>
@@ -64,7 +72,7 @@
 
 </section>
 
-<div class="container-slider">
+<div class="container-slider" id="galeria">
 
     <div  class="slider" id="slider">
 
@@ -142,7 +150,7 @@
 
 
 
-<section class="container location">
+<section class="container location" id="location">
 
     <p class="ubicacion">
         Vení a visitarnos. <br>
@@ -154,7 +162,7 @@
 
 </section>
 
-<div><p>¿Dudas? ¿Sugerencias?</p> <a onclick="mostrarContenido()"  id="mostrar" href="#formulario" >Contactanos</a>
+<div id="contacto"><p>¿Dudas? ¿Sugerencias?</p> <a onclick="mostrarContenido()"  id="mostrar" href="#formulario" >Contactanos</a>
 </div> 
 
 

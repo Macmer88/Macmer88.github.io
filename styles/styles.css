@@ -18,7 +18,7 @@
         align-content: center;
     }
     
-    /** Aqui comienza la configuracion del header para dispositivos moviles**/
+    /* Aqui comienza la configuracion del header para dispositivos moviles*/
     
     header.header{
         width: 100%;
@@ -41,22 +41,55 @@
         color: bisque;
         font-weight: bold;
     }
-    /** Aqui comienza la configuracion del menu hamburguesa **/
-
-    nav{
-        border: solid coral 1px;
-        margin: 10px 10px;
-        background-color: darkgreen;
-        color: beige;
-        font-weight: bold;
-        }
-
-    nav.menu ul{
-        list-style-type: none;
-        text-align: center;
+    /* Aqui comienza la configuracion del menu hamburguesa */
+    .abrir-menu{
+        display: flex;
+        margin: auto 0;
     }
+   div.nav-bar{
+    display: flex;
+    align-items:flex-end;
+    justify-content:right;
+    padding: 2rem;
+    background-color: lightgreen;
+   }
+   .nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+   
+   }
+   .nav.visible{
+    opacity: 1;
+    visibility: visible;
+   }
 
-    /** Aqui comienza la seccion principal**/
+   .nav-list{
+    gap: 1rem;
+    display: flex;
+    list-style-type: none;
+    align-items: end;
+    flex-direction: column;
+   }
+
+   .nav-list li a{
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+   }
+    
+    
+    
+    /* Aqui comienza la seccion principal*/
 
     section.home div.img-home{
         display: flex;
@@ -84,7 +117,7 @@
         margin: 0 auto;
     }
 
-    /** En esta seccion empieza la galeria de imagenes**/
+    /* En esta seccion empieza la galeria de imagenes*/
 
    .container-slider{
     width: 100%;
@@ -151,7 +184,7 @@
 
 
 
-   /**Acá empieza la seccion del iframe que muestra la localizacion y como llegar**/
+   /*Acá empieza la seccion del iframe que muestra la localizacion y como llegar*/
 
    section.location p{
     width: 50%;
@@ -162,7 +195,7 @@
     height: 70%;
    }
 
-   /** acá empieza la seccion del formulario **/
+   /* acá empieza la seccion del formulario */
 
    section#formulario{
     display: none;
