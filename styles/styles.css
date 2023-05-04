@@ -338,6 +338,7 @@ footer div.der span.lineas-span{
 }
 
 footer div.logo{
+    align-items: center;
     display: flex;
     font-size: smaller;
     color: whitesmoke;
