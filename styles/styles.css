@@ -11,11 +11,13 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        background-color: coral;
+        background-color: #c1c1c1;
         margin-bottom: 5px;
         padding: 5px;
         justify-content: center;
         align-content: center;
+        box-shadow: 0 0 0 10px #fff,
+        0 15px 50px;
     }
     
     /* Aqui comienza la configuracion del header para dispositivos moviles*/
@@ -24,17 +26,20 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         background-color: black;
         justify-content: center;
         align-items:center ;
+        margin-bottom: 0;
     }
    
 
     header img.logo{
         display: block;
-        width: 50%;
+        width: 30%;
     
     }
+    
     h1.titulo{
         text-align: center;
         display: block;
@@ -43,35 +48,56 @@
     }
     /* Aqui comienza la configuracion del menu hamburguesa */
     .abrir-menu{
+        position: absolute;
+        right: 14px;
+        padding: 0;
+        width: auto;
+        height: 0.25rem;
+        border: none;
+        background-color: transparent;
         display: flex;
-        margin: auto 0;
+        margin: 0;
+        cursor: pointer;
     }
+    .cerrar-menu{
+        position: absolute;
+        right: 14px;
+        padding: 0;
+        width: auto;
+        height: 0.25rem;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        margin: 25px 0;
+        cursor: pointer;
+    }
+
    div.nav-bar{
-    display: flex;
-    align-items:flex-end;
-    justify-content:right;
-    padding: 2rem;
-    background-color: lightgreen;
-   }
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 0;
+    width: fit-content;
+    z-index: 2;
+    margin-top: 10px;
+    margin-right: -20px;
+}
    .nav{
+    background-color: black;
+    height: auto;
+    margin: 0;
     opacity: 0;
     visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 1rem;
-    padding: 2rem;
-    background-color: black;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
    
    }
    .nav.visible{
     opacity: 1;
     visibility: visible;
+    height: auto;
    }
 
    .nav-list{
@@ -120,6 +146,7 @@
     /* En esta seccion empieza la galeria de imagenes*/
 
    .container-slider{
+    background-color: #c1c1c1;
     width: 100%;
     max-width: 900%;
     margin: 25px auto;
@@ -186,16 +213,22 @@
 
    /*Acá empieza la seccion del iframe que muestra la localizacion y como llegar*/
 
+   #location{
+    flex-direction: column;
+    justify-content: stretch;
+   }
    section.location p{
-    width: 50%;
+    width: 100%;
+    height: 100%;
    }
 
    iframe.mapa{
-    width: 50%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
    }
 
    /* acá empieza la seccion del formulario */
+
 
    section#formulario{
     display: none;
@@ -204,20 +237,21 @@
     text-decoration: none;
    }
    a#cerrar{
-   margin: 0 100%;
-   padding: 0 10px;
-   text-decoration: none;
+    z-index: 3;
+   margin: 0;
+   padding: 0
    }
 
    section.container div.formulario{
     display: flex;
     flex-wrap: wrap;
     margin: 10px 10px;
-    width: 100%;
-    background-color: blueviolet;
+    width: 90%;
+    background-color: grey;
     justify-content: flex-start;
     text-align: left;
    }
+   
 
    section.container div.formulario input.datos{
     width: 100%;
@@ -235,10 +269,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: 10px 10px;
-    width: 100%;
+    width: 83%;
     justify-content: flex-start;
     text-align: left;
-    background-color: chartreuse;
+    background-color: grey;
    }
 
   fieldset input#upload{
@@ -252,39 +286,63 @@
 
 
    footer{
+    margin: 40px auto;
     background-color: black;
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
     font-size: 75%;
    }
 
    footer div.izq{
-    width:50%;
-    margin: 0;
-    padding: 0;
-   }
-   
-
-   footer div.izq ul{
-    
-    text-align: left;
+    display: flex;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+}
+footer ul li{
     list-style-type: none;
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    width: 70%;
-    color: antiquewhite;
-   }
+
+}
+#redes{
+    text-align: center;
+    cursor: pointer;
+}
+footer div.der{
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: lightslategray;
+    display: flex;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+}
 
 
+footer div.der span.lineas-span{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    color: rgba(1, 77, 20, 0.51);
+    border-bottom: solid 3px;
+}
+.texto-span{
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    font-weight: bolder;
+}
 
-   footer div.der{
-    width: 50%;
-    background-color: bisque;
-   }
+footer div.logo{
+    display: flex;
+    font-size: smaller;
+    color: whitesmoke;
+    font-weight: bold;
+}
 
 
  

@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
-
+    <script src="https://kit.fontawesome.com/c5a16d2e36.js" crossorigin="anonymous"></script>
 
     <title>Pizzeria La Nonna</title>
 
@@ -23,7 +23,7 @@
 
 
 
-<header class="container header">
+<header id="header" class="container header">
     <img  class="logo" src="/media/logo1024px.png" alt="logo-pizeria">
     <h1 class="titulo" >Nuestra pasión es el sabor</h1>
 
@@ -31,17 +31,17 @@
 
 <div class="nav-bar">
 
-    <button class="abrir-menu" id="abrir">abrir</button>
+    <button class="abrir-menu" id="abrir"><i class="fa-solid fa-bars"></i></button>
     <nav class="nav" id="nav">
 
-        <button class="cerrar-menu" id="cerrar">cerrar</button>
+        <button class="cerrar-menu" id="cerrar"><i class="fa-regular fa-circle-xmark" style="color: #f3f4f7;"></i></button>
     
         <ul class="nav-list">
-            <li class="items"> <a href="#home">Home</a></li>
-            <li class="items"><a href="#galeria">Galeria</a></li>
-            <li class="items"><a href="#carta">Nuestra carta</a></li>
-            <li class="items"><a href="#location">¿Donde estamos</a></li>
-            <li class="items"><a href="#contacto">Contacto</a></li>
+            <li class="items"> <a href="#home"><i class="fa-solid fa-house fa-beat" style="color: #ffffff;"></i>Home</a></li>
+            <li class="items"><a href="#galeria"><i class="fa-regular fa-user fa-beat" style="color: #fcfcfc;"></i>Nosotros</a></li>
+            <li class="items"><a href="#carta"><i class="fa-solid fa-book fa-beat" style="color: #ffffff;"></i>Menú</a></li>
+            <li class="items"><a href="#location"><i class="fa-solid fa-location-dot fa-beat" style="color: #ffffff;"></i>¿Donde estamos?</a></li>
+            <li class="items"><a href="#contacto"><i class="fa-regular fa-envelope fa-beat" style="color: #fafafa;"></i>Contacto</a></li>
         </ul>
        
     
@@ -153,8 +153,8 @@
 <section class="container location" id="location">
 
     <p class="ubicacion">
-        Vení a visitarnos. <br>
-        Estamos en Pleno centro de la ciudad de Concordia.
+        Vení a visitarnos. <br><br>
+        Estamos en Pleno centro de la ciudad de Concordia. <br><br>
         Frente a la plaza principal.
     </p>
 
@@ -162,7 +162,7 @@
 
 </section>
 
-<div id="contacto"><p>¿Dudas? ¿Sugerencias?</p> <a onclick="mostrarContenido()"  id="mostrar" href="#formulario" >Contactanos</a>
+<div id="contacto"><p>¿Dudas? ¿Sugerencias?</p> <a onclick="mostrarContenido()"  id="mostrar" href="#formulario" ><i class="fa-regular fa-envelope" style="color: #1c1c1c;"></i>Contactanos </a>
 </div> 
 
 
@@ -170,7 +170,7 @@
 
     <div class="formulario">
 
-         <a onclick="ocultarContenido()"  id="cerrar" href="#formulario">X</a> 
+         <a onclick="ocultarContenido()"  id="cerrar" href="#formulario"><i class="fa-regular fa-circle-xmark" style="color: #1c1c1c;"></i></a> 
         <form>
             <label  for="nombreapellido">Nombre y apellido:</label> <br>
             <input class="datos" type="text" id="nombreapellido"  required> <br>
@@ -233,11 +233,12 @@
     <div class="izq">
         
         <ul >
-            <li>Teléfono: +5434542884189</li>
-            <li>Dirección: Mitre 76</li>
-            <li>Seguinos en nuestras redes sociales:
+            <li><i class="fa-solid fa-phone" style="color: #fcfcfc;"></i>Teléfono: +5434542884189</li>
+            <li><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>Dirección: Mitre 76</li>
+            <li>Seguinos en nuestras redes sociales: <br> 
+                <div style="text-align: center;"><i id="redes" class="fa-brands fa-facebook" style="color: #ffffff;"></i> <i id="redes"class="fa-brands fa-instagram" style="color: #ffffff;"></i> <i id="redes"class="fa-brands fa-twitter" style="color: #ffffff;"></i></div>
 
-
+                    
             </li>
         </ul>
 
@@ -245,7 +246,15 @@
     </div>
 
     <div class="der">
+        <span class="lineas-span"><p class="texto-span">PENES ERECTOS POR </p> </span>
+        <span class="lineas-span"><p class="texto-span">PENES ERECTOS POR </p></span>
+        <span class="lineas-span"><p class="texto-span">PENES ERECTOS POR </p></span>
 
+       </div>
+
+       <div class="logo"><a id="logo-footer" href="#header"><img style="width: 25px; padding: 0;" src="/media/logo1024px.png" alt="logo-pizeria"></a>
+        <p> La Nonna pizzeria Copyright © 2023</p>
+    
     </div>
 
 </footer>
