@@ -12,7 +12,7 @@
         display: flex;
         flex-wrap: wrap;
         background-color: #c1c1c1;
-        margin-bottom: 5px;
+        margin-bottom: 30px;
         padding: 5px;
         justify-content: center;
         align-content: center;
@@ -221,12 +221,14 @@
     right: 10px;
     
    }
+   /*Acá empieza la seccion del iframe que muestra el menú de la pizzeria*/
 
 
 
    /*Acá empieza la seccion del iframe que muestra la localizacion y como llegar*/
 
    #location{
+    margin-top: 30px;
     flex-direction: column;
     justify-content: stretch;
    }
@@ -295,7 +297,7 @@
   }
  
    
-  
+ /*Sección footer*/ 
 
 
    footer{
