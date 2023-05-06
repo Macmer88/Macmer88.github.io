@@ -241,6 +241,9 @@ section#carta div.carta-pdf{
     box-shadow: 0 0 0 10px grey,
                 0 15px 50px;
 }
+
+#carta
+
 #cerrarCarta, #mostrarCarta{
     display: f;
     margin: 0;
