@@ -8,7 +8,7 @@
 }
    
     .container{
-        width: 100%;
+        width: 94%;
         display: flex;
         flex-wrap: wrap;
         background-color: #c1c1c1;
@@ -62,7 +62,7 @@
     /* Aqui comienza la configuracion del menu hamburguesa */
     .abrir-menu{
         position: absolute;
-        right: 14px;
+        right: 0;
         padding: 0;
         width: auto;
         height: 0.25rem;
@@ -160,7 +160,7 @@
 
    .container-slider{
     background-color: #c1c1c1;
-    width: 100%;
+    width: 94%;
     max-width: 900%;
     margin: 25px auto;
     overflow: hidden;
@@ -222,8 +222,32 @@
     
    }
    /*Acá empieza la seccion del iframe que muestra el menú de la pizzeria*/
-
-
+   .divCarta{
+    display: flex;
+    justify-content: center;
+   }
+section#carta{
+    display: none;
+    justify-content:right;
+    margin-top: 10px;
+}
+section#carta div.carta-pdf{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 500px;
+    margin: 15px;
+    border: solid grey;
+    box-shadow: 0 0 0 10px grey,
+                0 15px 50px;
+}
+#cerrarCarta, #mostrarCarta{
+    display: f;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+}
 
    /*Acá empieza la seccion del iframe que muestra la localizacion y como llegar*/
 

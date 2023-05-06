@@ -70,10 +70,10 @@ function prev(){
 btnRight.addEventListener('click', function(){next()});
 btnLeft.addEventListener('click', function(){prev()});
 
-// función mostrar / ocultar carta
+//función mostrar - ocultar carta
 
 function mostrarCarta(){
-    menu = document.getElementById('menu-carta');
+    menu = document.getElementById('carta');
     if(menu.style.display = 'none'){
         menu.style.display = 'flex'
     }
@@ -82,10 +82,11 @@ function mostrarCarta(){
    
 }
 
-function ocultarContenido(){
-    cartel = document.getElementById('menu-carta');
+function cerrarCarta(){
+    cartel = document.getElementById('carta');
     if(cartel.style.display = 'flex'){
         cartel.style.display = 'none';
     }
 }
+
 
