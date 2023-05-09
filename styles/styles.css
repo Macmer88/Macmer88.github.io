@@ -1,5 +1,5 @@
 *{
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     margin: 0 auto;
     padding: 10px;
@@ -161,7 +161,7 @@
    .container-slider{
     background-color: #c1c1c1;
     width: 94%;
-    max-width: 900%;
+    max-width: 900px;
     margin: 25px auto;
     overflow: hidden;
     box-shadow: 0 0 0 10px #fff,
@@ -173,7 +173,7 @@
     display: flex;
     width: 600%;
     height: auto;
-    margin-left: -100;
+    margin-left: -100%;
    }
    .slider__section{
     height: auto;
@@ -251,6 +251,60 @@ section#carta div.carta-pdf{
     display: flex;
     text-decoration: none;
 }
+
+/*Sección de reseñas*/
+#seccion-opiniones{
+    background-color: #c1c1c1;
+    width: 94%;
+    margin: 25px auto;
+    overflow:hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 15px 50px;
+    position: relative;
+    height: auto;
+    margin-bottom: 35px;
+   }
+
+   div.contenedor-opiniones{
+    display: flex;
+    width: 600%;
+    height: auto;
+    margin-left: -100%;
+   }
+
+   section.container div.contenedor-opiniones div.opiniones{
+    height: 500px;
+    margin: 0 30px;
+    min-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: solid green ;
+    border-radius: 30px;
+    justify-content: center;
+   } 
+
+   span.lineas-opinion{
+    margin: 20px auto;
+    border-bottom: solid red 2px;
+    width: 75%;
+   }
+
+   section.container div.contenedor-opiniones div.opiniones p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bolder;
+    margin: 0 auto;
+    text-align: justify;
+    display: flex;
+    width: 100%;
+    font-size: 0.9rem;
+   }
+   section.container div.contenedor-opiniones div.opiniones .img-opp{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+   }
 
    /*Acá empieza la seccion del iframe que muestra la localizacion y como llegar*/
 
