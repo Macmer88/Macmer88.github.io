@@ -1,14 +1,22 @@
 *{
     font-size: 1rem;
-    font-weight: bold;
     margin: 0 auto;
     padding: 10px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+
 }
+
+body{
+    background-color:  rgba(252, 0, 0, 0.733); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
    
     .container{
-        width: 94%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         background-color: #c1c1c1;
@@ -24,7 +32,6 @@
     
     header.header{
        
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -133,7 +140,6 @@
     section.home div.img-home{
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
         height: auto;
         margin: auto;
     }
@@ -160,8 +166,6 @@
 
    .container-slider{
     background-color: #c1c1c1;
-    width: 94%;
-    max-width: 900px;
     margin: 25px auto;
     overflow: hidden;
     box-shadow: 0 0 0 10px #fff,
@@ -228,44 +232,41 @@
    }
 section#carta{
     display: none;
+    flex-wrap: nowrap;
     justify-content:right;
-    margin-top: 10px;
-}
-section#carta div.carta-pdf{
-    display: flex;
-    justify-content: center;
-    width: 85%;
-    height: 500px;
-    margin: 15px;
+    margin: 30px 20px;
+    justify-content:center;
+    height: auto;
     border: solid grey;
     box-shadow: 0 0 0 10px grey,
                 0 15px 50px;
 }
 
-#carta
+#carta-pdf{
+    width: 100%;
+    min-height: 900px;
+}
 
 #cerrarCarta, #mostrarCarta{
-    display: f;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 0 ;
     display: flex;
     text-decoration: none;
 }
 
 /*Sección de reseñas*/
 #seccion-opiniones{
-    background-color: #c1c1c1;
-    width: 94%;
-    margin: 25px auto;
+    background-image:url(/media/fondo.jpg);
+    background-position: center;
     overflow:hidden;
     box-shadow: 0 0 0 10px #fff,
                 0 15px 50px;
     position: relative;
     height: auto;
     margin-bottom: 35px;
-   }
-
+}
    div.contenedor-opiniones{
+    justify-content: center;
     display: flex;
     width: 600%;
     height: auto;
@@ -273,37 +274,42 @@ section#carta div.carta-pdf{
    }
 
    section.container div.contenedor-opiniones div.opiniones{
-    height: 500px;
+    height: auto;
     margin: 0 30px;
-    min-width: 300px;
+    font-size: 1.25em;
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    border: solid green ;
-    border-radius: 30px;
-    justify-content: center;
+    background-color:  rgba( 250,240,240, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba( 138,214,132, 0.3);
    } 
 
    span.lineas-opinion{
     margin: 20px auto;
-    border-bottom: solid red 2px;
-    width: 75%;
+    border-bottom: solid white 5px;
+    width: 80%;
    }
 
    section.container div.contenedor-opiniones div.opiniones p {
+    color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight:bolder;
+    font-weight:bold;
     margin: 0 auto;
     text-align: justify;
     display: flex;
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
    }
    section.container div.contenedor-opiniones div.opiniones .img-opp{
-    width: 70%;
+    object-fit: cover;
+    margin: 10px 10px;
     display: flex;
-    margin: 0 auto;
+    width: 100%;
+    min-width: 400px;
    }
 
    /*Acá empieza la seccion del iframe que muestra la localizacion y como llegar*/
