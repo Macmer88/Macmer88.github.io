@@ -9,6 +9,7 @@
 }
 
 body{
+    max-width: 400px;
     background-color:  rgba(252, 0, 0, 0.733); 
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -165,6 +166,7 @@ body{
     /* En esta seccion empieza la galeria de imagenes*/
 
    .container-slider{
+    max-width: 4;
     background-color: #c1c1c1;
     margin: 25px auto;
     overflow: hidden;
@@ -227,28 +229,38 @@ body{
    }
    /*Acá empieza la seccion del iframe que muestra el menú de la pizzeria*/
    .divCarta{
+    margin-bottom: 20px;
+    background-color: whitesmoke ;
     display: flex;
     justify-content: center;
    }
 section#carta{
     display: none;
+    height: 500px;
     flex-wrap: nowrap;
-    justify-content:right;
-    margin: 30px 20px;
+    flex-direction: row;
     justify-content:center;
-    height: auto;
     border: solid grey;
     box-shadow: 0 0 0 10px grey,
                 0 15px 50px;
 }
 
 #carta-pdf{
-    width: 100%;
-    min-height: 900px;
+    width: 90%;
+    height: 100%;
+    margin-left: 0;
 }
 
-#cerrarCarta, #mostrarCarta{
+ #mostrarCarta{
     margin: 10px;
+    padding: 0 ;
+    display: flex;
+    text-decoration: none;
+}
+
+#cerrarCarta{
+    align-self:flex-start ;
+    margin: 0;
     padding: 0 ;
     display: flex;
     text-decoration: none;
@@ -461,7 +473,7 @@ footer div.logo{
  
 
 /*Pimer breakpoint - Dispositivos móviles */
-@media screen and (min-width: 480px){
+@media screen and (min-width: 460px){
    header img.logo{
     width: 25%;} 
     
