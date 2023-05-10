@@ -256,6 +256,8 @@ section#carta{
 
 /*Sección de reseñas*/
 #seccion-opiniones{
+    justify-content: center;
+    align-items: center;
     background-image:url(/media/fondo.jpg);
     background-position: center;
     overflow:hidden;
@@ -263,24 +265,32 @@ section#carta{
                 0 15px 50px;
     position: relative;
     height: auto;
-    margin-bottom: 35px;
 }
+
+
+
    div.contenedor-opiniones{
     justify-content: center;
+    align-items:stretch;
     display: flex;
     width: 600%;
     height: auto;
-    margin-left: -100%;
+    animation: slide 30s infinite alternate ease-in-out;
    }
 
-   section.container div.contenedor-opiniones div.opiniones{
+   @keyframes slide{
+    0%{margin-left: -500%;}
+    100%{margin-left: 500%;}
+}
+
+  div.contenedor-opiniones div.opiniones{
     height: auto;
-    margin: 0 30px;
+    margin: 0 20px;
     font-size: 1.25em;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color:  rgba( 250,240,240, 0.3);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -294,7 +304,7 @@ section#carta{
     width: 80%;
    }
 
-   section.container div.contenedor-opiniones div.opiniones p {
+    div.opiniones p {
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight:bold;
@@ -304,12 +314,12 @@ section#carta{
     width: 100%;
     font-size: 1.2rem;
    }
-   section.container div.contenedor-opiniones div.opiniones .img-opp{
-    object-fit: cover;
+   div.opiniones .img-opp{
     margin: 10px 10px;
     display: flex;
     width: 100%;
-    min-width: 400px;
+    object-fit: cover;
+    min-width: 280px;
    }
 
    /*Acá empieza la seccion del iframe que muestra la localizacion y como llegar*/
