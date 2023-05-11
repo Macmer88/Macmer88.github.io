@@ -333,7 +333,8 @@
             <input class="datos" type="email" id="correoelectronico"  required placeholder="email@dominio.com"> <br>
             
             <label>Teléfono:</label> <br>
-            <input  class="datos" type="tel"  required placeholder="(XX) XXX-XXXXXXX"> <br>
+            <input  class="datos" type="tel"
+                id="telefono"  required placeholder="(XX) XXX-XXXXXXX"> <br>
             
             <label for="mensaje">Mensaje:</label> <br>
             <textarea id="mensaje" required></textarea>
@@ -378,7 +379,7 @@
     </div>
 
 
-    <input type="submit" value="Enviar formulario" class="enviar">
+    <input onclick="validacion()" type="submit" value="Enviar formulario" id="btn-enviar">
         
        
 </section>
