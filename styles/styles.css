@@ -10,7 +10,7 @@
 
 body{
     max-width: 400px;
-    background-color:  rgba(252, 0, 0, 0.733); 
+    background-color:  rgb(15, 56, 15); 
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 }
@@ -20,12 +20,14 @@ body{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        background-color: #c1c1c1;
+        background-color: #e0e0e0;
         padding: 5px;
         justify-content: center;
         align-content: center;
-        box-shadow: 0 0 0 10px #fff,
+        border-radius: 12px;
+        box-shadow: 0 0 0 10px rgba(34, 110, 3, 0.4),
         0 15px 50px;
+
     }
     
     /* Aqui comienza la configuracion del header para dispositivos moviles*/
@@ -38,7 +40,7 @@ body{
         background-color: black;
         justify-content: center;
         align-items:center ;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
     .getin-1 {
         animation-delay: 1ms;
@@ -76,7 +78,7 @@ body{
         border: none;
         background-color: transparent;
         display: flex;
-        margin: 0;
+        margin: 30px 0;
         cursor: pointer;
     }
     .cerrar-menu{
@@ -109,7 +111,7 @@ body{
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
  }
    .nav.visible{
@@ -122,11 +124,12 @@ body{
     gap: 1rem;
     display: flex;
     list-style-type: none;
-    align-items: end;
+    align-items: start;
     flex-direction: column;
    }
 
    .nav-list li a{
+    font-size: 0.75rem;
     text-decoration: none;
     color: lightgoldenrodyellow;
    }
@@ -163,10 +166,11 @@ body{
     /* En esta seccion empieza la galeria de imagenes*/
 
    .container-slider{
+    border-radius: 12px;
     background-color: #c1c1c1;
     margin: 25px auto;
     overflow: hidden;
-    box-shadow: 0 0 0 10px #fff,
+    box-shadow: 0 0 0 10px rgba(34, 110, 3, 0.4),
                 0 15px 50px;
     position: relative;
     height: auto;
@@ -179,7 +183,7 @@ body{
    .slider__section{
     height: auto;
     font-size: 1.25em;
-    margin: 0 10px;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -188,21 +192,18 @@ body{
    }
   
    .slider__img{
-    object-fit: cover;
-    margin: 10px 10px;
+    width: 85%;
     display: flex;
-    width: 100%;
+    margin: 0 auto;
    }
    .slider__btn{
     padding: 0;
     margin: 0;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: auto;
     background: rgba(57, 49, 97, 0.7);
     top: 50%;
     transform: translateY(-50%);
-    font-size: 35px;
     font-weight: bold;
     text-align: center;
     border-radius: 50%;
@@ -215,28 +216,28 @@ body{
 
    }
    .slider__btn--left{
-    left: 10px;
-
+    left: 0px;
    }
    .slider__btn--right{
-    right: 10px;
+    right: 0px;
     
    }
    /*Acá empieza la seccion del iframe que muestra el menú de la pizzeria*/
    .divCarta{
-    margin-bottom: 20px;
+    margin: 35px;
     background-color: whitesmoke ;
     display: flex;
     justify-content: center;
    }
 section#carta{
+    margin-bottom: 35px;
     display: none;
     height: 500px;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content:center;
     border: solid grey;
-    box-shadow: 0 0 0 10px grey,
+    box-shadow: 0 0 0 10px rgba(34, 110, 3, 0.4),
                 0 15px 50px;
 }
 
@@ -268,7 +269,7 @@ section#carta{
     background-image:url(/media/fondo.jpg);
     background-position: center;
     overflow:hidden;
-    box-shadow: 0 0 0 10px #fff,
+    box-shadow: 0 0 0 10px rgba(34, 110, 3, 0.4),
                 0 15px 50px;
     position: relative;
     height: auto;
@@ -292,17 +293,18 @@ section#carta{
 
   div.contenedor-opiniones div.opiniones{
     height: auto;
+    justify-content: center;
     margin: 0 20px;
     font-size: 1.25em;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color:  rgba( 250,240,240, 0.3);
+    background-color:  rgba( 250,240,240, 0.4);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
-    border: 1px solid rgba( 138,214,132, 0.3);
+    border: 1px solid rgba( 138,214,132, 0.4);
    } 
 
    span.lineas-opinion{
@@ -313,13 +315,11 @@ section#carta{
 
     div.opiniones p {
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight:bold;
+    font-weight:bolder;
     margin: 0 auto;
-    text-align: justify;
+    text-align: center;
     display: flex;
     width: 100%;
-    font-size: 1.2rem;
    }
    div.opiniones .img-opp{
     margin: 10px 10px;
