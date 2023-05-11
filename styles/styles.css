@@ -163,7 +163,6 @@ body{
     /* En esta seccion empieza la galeria de imagenes*/
 
    .container-slider{
-    max-width: 4;
     background-color: #c1c1c1;
     margin: 25px auto;
     overflow: hidden;
@@ -176,7 +175,6 @@ body{
     display: flex;
     width: 600%;
     height: auto;
-    margin-left: -100%;
    }
    .slider__section{
     height: auto;
@@ -412,6 +410,9 @@ section#carta{
     flex-wrap: nowrap;
   }
  
+  .enviar{
+    cursor: pointer;
+  }
    
  /*Sección footer*/ 
 
@@ -466,7 +467,7 @@ footer div.der span.lineas-span{
     display: flex;
     justify-content: center;
     width: 90%;
-    color: rgba(1, 77, 20, 0.51);
+    color: rgba(0, 5, 1, 0.808);
     border-bottom: solid 3px;
 }
 .texto-span{
