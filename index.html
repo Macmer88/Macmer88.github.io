@@ -24,9 +24,13 @@
 
 
 <header id="header" class="container header">
-     <img  class="logo getin-1" src="/media/logo1024px.png" alt="logo-pizeria">
-     <h1 class="titulo getin-1" >Nuestra pasión es el sabor</h1>
 
+    <div class="encabezado">
+        <img  class="logo getin-1" src="/media/logo-sinfondo.png" alt="logo-pizeria">
+        <h1 class="titulo getin-1" >Nuestra pasión es el sabor</h1>
+
+    </div>
+     
 </header>
 
 <div class="nav-bar">
@@ -329,7 +333,8 @@
             <input class="datos" type="email" id="correoelectronico"  required placeholder="email@dominio.com"> <br>
             
             <label>Teléfono:</label> <br>
-            <input  class="datos" type="tel"  required placeholder="(XX) XXX-XXXXXXX"> <br>
+            <input  class="datos" type="tel"
+                id="telefono"  required placeholder="(XX) XXX-XXXXXXX"> <br>
             
             <label for="mensaje">Mensaje:</label> <br>
             <textarea id="mensaje" required></textarea>
@@ -374,7 +379,7 @@
     </div>
 
 
-    <input type="submit" value="Enviar formulario" class="enviar">
+    <input onclick="validacion()" type="submit" value="Enviar formulario" id="btn-enviar">
         
        
 </section>

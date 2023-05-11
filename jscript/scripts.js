@@ -98,4 +98,48 @@ function cerrarCarta(){
     }
 }
 
+//validacion del formulario
+const btnEnviar = document.querySelector('#btn-enviar');
+
+function validacion(){
+
+    const nombreYapellido = document.querySelector('#nombreapellido');
+
+    const correoelectronico = document.querySelector('#correoelectronico');
+
+    const telefono = document.querySelector('#telefono');
+
+    const mensaje = document.querySelector('#mensaje');
+
+
+
+    if(nombreYapellido.value === ""){
+        alert('Por favor, ingrese su nombre y apellido');
+        return false
+    }
+
+    if(correoelectronico.value === ""){
+        alert('Por favor, ingrese su dirección de email');
+        return false
+    }
+   
+    if(telefono.value === ""){
+            alert('Por favor ingrese un número de teléfono valido');
+        
+        return false
+    }
+    if(mensaje.value === ""){
+        alert('Por favor, ingrese su mensaje');
+        return false
+    }
+
+     return true;
+}
+
+
+
+
+
+
+
 
