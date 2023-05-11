@@ -33,15 +33,19 @@ body{
     /* Aqui comienza la configuracion del header para dispositivos moviles*/
     
     header.header{
-       
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        background-color: black;
-        justify-content: center;
-        align-items:center ;
-        margin-bottom: 10px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: url(/media/fondo\ header.jpg);
+    background-size:cover;
+    margin-bottom: 10px;
+    justify-content: flex-end;
     }
+
+
+
+
     .getin-1 {
         animation-delay: 1ms;
         animation-duration: 4s;
@@ -54,20 +58,32 @@ body{
         25%   { transform: translateX(150%); }
      }
 
+     div.encabezado{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+     }
    
 
     header img.logo{
-        display: block;
-        width: 30%;
-    
+        display: flex;
+        width: 18%;
+        padding: 0;
+
     }
     
     h1.titulo{
-        text-align: center;
-        display: block;
-        color: bisque;
-        font-weight: bold;
-    }
+        display: flex;
+        color: black;
+        font-weight: bolder;
+        background-color:  rgba( 250,240,240, 0.4);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-radius: 10px;
+
+   }
+    
     /* Aqui comienza la configuracion del menu hamburguesa */
     .abrir-menu{
         right: 0;
@@ -356,6 +372,7 @@ section#carta{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    
    }
 
    section#formulario{
