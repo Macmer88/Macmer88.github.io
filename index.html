@@ -324,20 +324,21 @@
 
     <div class="formulario">
 
-         <a onclick="ocultarContenido()"  id="cerrar" href="#formulario"><i class="fa-regular fa-circle-xmark" style="color: #1c1c1c;"></i></a> 
-        <form>
+         <a onclick="ocultarContenido()"  id="cerrar" href="#formulario"><i class="fa-regular fa-circle-xmark" style="color: #1c1c1c;"></i></a>
+         
+        <form action="https://formspree.io/f/xqkojzwk" method="post">
             <label  for="nombreapellido">Nombre y apellido:</label> <br>
-            <input class="datos" type="text" id="nombreapellido"  required> <br>
+            <input class="datos" type="text" name="nombre" id="nombreapellido"  required> <br>
             
             <label  for="correoelectronico">Correo electronico:</label> <br>
-            <input class="datos" type="email" id="correoelectronico"  required placeholder="email@dominio.com"> <br>
+            <input class="datos" type="email" name="correo" id="correoelectronico"  required placeholder="email@dominio.com"> <br>
             
             <label>Teléfono:</label> <br>
-            <input  class="datos" type="tel"
+            <input  class="datos" type="tel" name="tel"
                 id="telefono"  required placeholder="(XX) XXX-XXXXXXX"> <br>
             
             <label for="mensaje">Mensaje:</label> <br>
-            <textarea id="mensaje" required></textarea>
+            <textarea id="mensaje" required name="msj"></textarea>
     
             <fieldset>
                 <legend>¿Cómo le gustaría que lo contactemos?</legend>
@@ -356,12 +357,11 @@
         
         
         
-            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades y promociones?</label> <br>
+            <label class="checkbox"><input type="checkbox" name="checkbox" checked>¿Le gustaría recibir novedades y promociones?</label> <br>
             
            
     
         
-        </form>
 
     </div>
     <div class="curriculum">
@@ -381,6 +381,7 @@
 
     <input onclick="validacion()" type="submit" value="Enviar formulario" id="btn-enviar">
         
+</form>
        
 </section>
 
