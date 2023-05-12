@@ -427,7 +427,7 @@ section#carta{
     flex-wrap: nowrap;
   }
  
-  .btn-enviar{
+  #btn-enviar{
     cursor: pointer;
   }
    
