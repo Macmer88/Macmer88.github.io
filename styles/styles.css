@@ -585,6 +585,10 @@ footer div.logo{
            padding: 0 3px;
            }
 
+           .texto-home{
+            margin: 15px;
+           }
+
            .container-slider{
             border-radius: unset;
             background-color: #c1c1c1;
