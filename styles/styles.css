@@ -9,7 +9,6 @@
 }
 
 body{
-    max-width: 400px;
     background-color:  rgb(15, 56, 15); 
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -74,6 +73,7 @@ body{
     }
     
     h1.titulo{
+        margin-left: 5px;
         display: flex;
         color: black;
         font-weight: bolder;
@@ -447,6 +447,7 @@ section#carta{
     flex-direction: column;
    }
    footer li, footer p{
+    align-content: baseline;
     font-size: 0.8rem;
    }
 
@@ -506,13 +507,187 @@ footer div.logo{
 
  
 
-/*Pimer breakpoint - Dispositivos móviles */
+/*Pimer breakpoint - Tablet */
 @media screen and (min-width: 460px){
-   header img.logo{
-    width: 25%;} 
+    *{
+        margin: 0;
+        padding: 0;
+        line-height: 30px;
+    }
+
+    .container{
+        border-radius: unset;
+        box-shadow: 0 0 0 10px rgba(34, 11, 3, 0.4),
+        0 15px 30px;
+
+    }
+
+    header.header{
+        justify-content: flex-start;
+        }
+
+    header img.logo{
+        margin:auto 10px;
+        display: flex;
+        max-width: 85px;
+        padding: 0;
     
+        }
+       
+
+        div.nav-bar{
+            width:100%;
+            margin-right: 0;
+            position: sticky;
+            top: 0;
+            height: auto;
+            z-index: 2;
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+
+        .abrir-menu{
+        display: none;
+        }
+
+        .cerrar-menu{
+            display: none;
+        }
+
+        .nav{
+            padding: 10px 0;
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            box-shadow: unset
+         }
+
+         .nav-list{
+            gap:1rem;
+            display: flex;
+            list-style-type: none;
+            align-items:center;
+            flex-direction: row;
+           }
+
+           .nav-list li a{
+            gap: 1;
+            font-size: 0.7rem;
+            text-decoration: none;
+            color: lightgoldenrodyellow;
+           }
+
+           .fa-beat{
+           padding: 0 3px;
+           }
+
+           .texto-home{
+            margin: 15px;
+           }
+
+           .container-slider{
+            border-radius: unset;
+            background-color: #c1c1c1;
+            margin: 25px auto;
+            overflow: hidden;
+            box-shadow: 0 0 0 10px rgba(34, 11, 3, 0.4),
+                        0 15px 50px;
+            position: relative;
+           }
+
+
+           .slider__img{
+            width: 80%;
+            display: flex;
+            margin: 20px auto;
+           }
+
+
+           .slider__btn{
+            padding: 10;
+            margin: 10;
+            position: absolute;
+            width: 35px;
+            background: rgba(57, 49, 97, 0.7);
+            top: 50%;
+            transform: translateY(-50%);
+           }
+
+           #galeria p{
+            margin: 10px 30px;
+           }
+        
+           .fa-utensils{
+
+            padding: 12px 10px;
+            
+           }
+
+           div#contacto{
+            margin: 30px auto;
+            background-color: whitesmoke;
+            justify-content: center;
+           }
+
+           .fa-envelope{
+            margin: 0 10px;
+           }
+
+
+        
+        
+          footer{
+    justify-content:left;
+    max-height: unset;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   }
+
+
+   footer div.izq{
+    width: 50%;
 }
 
 
+footer div.der{
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightslategray;
+    width: 50%;
+}
 
-    
+
+footer div.der span.lineas-span{
+    justify-content: left;
+    width: 80%;
+    margin: 0 auto;
+}
+.texto-span{
+    margin: 0;
+}
+
+.fa-credit-card, .fa-money-bill-transfer,.fa-money-bill-1{
+    margin: 5px;
+}
+
+footer div.logo{
+    width:100%;
+    justify-content: center;
+}
+
+
+           }
+
+
+
+
+
+
+
+   
