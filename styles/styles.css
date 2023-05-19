@@ -666,6 +666,27 @@ footer div.logo{
             justify-content: center;
            }
 
+           form{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            margin: 10px auto;
+           }
+
+           section.container div.curriculum{
+            width: 90%;
+            margin: 10px auto;
+            justify-content: center;
+            margin: 10px auto;
+            padding: 10px auto;
+           
+
+           }
+
+         
+
            .fa-envelope{
             margin: 0 10px;
            }
@@ -718,6 +739,177 @@ footer div.logo{
 }
 
 /* Optimizacion del sitio para dispositivos de escritrio y notebooks*/
+
+@media screen and (min-width:900px) {
+    div.padre{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 4;
+        height: 30vh;
+    }
+
+    header img.logo{
+        width: 27%;
+
+    }
+    
+    h1.titulo{
+        font-size: 2rem;
+   }
+
+    #contenedor-ppal{
+        display: flex;
+        width: 84%;
+        flex-wrap: wrap;
+        margin:0 auto;
+    } 
+
+    div.nav-bar{
+        width:15%;
+        top: 100px;
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    .nav{
+        justify-content: flex-start;
+        background-color: black;
+        height: 100%;
+        margin: 0 0;
+     }
+
+     .nav-list{
+        gap: 1rem;
+        display: flex;
+        list-style-type: none;
+        align-items: start;
+        flex-direction: column;
+        margin: 0 10px;
+       }
+    
+       .nav-list li a{
+        margin: 0 10px;
+        font-size: 0.75rem;
+        text-decoration: none;
+        color: lightgoldenrodyellow;
+       }
+
+       .fa-solid, .fa-envelope, .fa-regular{
+        margin: 0 5px 0 5px;
+
+       }
+
+       div.img-home{
+        margin: auto 0;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 50%;
+    }
+    section div.img-home img{
+        display: flex;
+        margin: 35px 35px;
+        width: 80%;
+    }
+
+    section div.texto-home{
+        padding: 0 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: justify;
+        display: flex;
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    section div.texto-home p{
+        font-size: 1.5rem;
+    }
+
+    .slider__section{
+       flex-direction: row;
+    }
+
+    .slider__img{
+        width: 45%;
+        display: flex;
+        margin: 25px 25px;
+       }
+
+       #galeria p{
+        margin: auto;
+        display: flex;
+        width:50%;
+        padding: 50px;
+        line-height: 45px;
+       }
+
+       .divCarta{
+        width: 100%;
+       }
+
+       #seccion-opiniones{
+        height: auto;
+       }
+
+    #location{
+        width: 97%;
+        margin: 30px auto;
+        flex-direction: column;
+        justify-content: center;
+       }
+
+
+       section.location p{
+        justify-content: center;
+        height: 75%;
+        width: 50%;
+        padding: 30px;
+       }
+
+       section iframe.mapa{
+        padding: 30px;
+        width: 50%;
+        height: 75%;
+       }
+
+       section#formulario{
+        width: 75%;
+        margin: 30px auto;
+       }
+
+       footer div.der span.lineas-span {
+       align-items: center;
+        justify-content: flex-start;
+       }
+
+       footer{
+        width:100%;
+        margin:0;
+        box-shadow: 0 0 0 10px rgb(1, 2, 0),
+        0 15px 50px;
+       }
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
 
 
 
