@@ -666,6 +666,27 @@ footer div.logo{
             justify-content: center;
            }
 
+           form{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            margin: 10px auto;
+           }
+
+           section.container div.curriculum{
+            width: 90%;
+            margin: 10px auto;
+            justify-content: center;
+            margin: 10px auto;
+            padding: 10px auto;
+           
+
+           }
+
+         
+
            .fa-envelope{
             margin: 0 10px;
            }
@@ -718,6 +739,54 @@ footer div.logo{
 }
 
 /* Optimizacion del sitio para dispositivos de escritrio y notebooks*/
+
+@media screen and (min-width:900px) {
+    header{
+        position: sticky;
+        top: 0;
+    }
+
+    
+
+    #contenedor-ppal{
+        display: flex;
+        width:80%;
+        flex-wrap: wrap;
+    } 
+
+    div.nav-bar{
+        width:20%;
+        top: 100px;
+        height: 80vh;
+        margin-bottom: 0;
+    }
+    
+    #location{
+        width: 80%;
+        margin: 30px 0;
+        flex-direction: column;
+        justify-content: stretch;
+       }
+
+
+    iframe.mapa{
+        width: fit-content;
+        height: 100%;
+       }
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
 
 
 
