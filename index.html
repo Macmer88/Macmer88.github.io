@@ -327,7 +327,7 @@
 
          <a onclick="ocultarContenido()"  id="cerrar" href="#formulario"><i class="fa-regular fa-circle-xmark" style="color: #1c1c1c;"></i></a>
          
-        <form action="https://formspree.io/f/xqkojzwk" method="post"  enctype="multipart/form-data">
+        <form id="form" action="https://formspree.io/f/xqkojzwk" method="post"  enctype="multipart/form-data">
             <label  for="nombreapellido">Nombre y apellido:</label> <br>
             <input class="datos" type="text" name="nombre" id="nombreapellido"  required> <br>
             
@@ -404,8 +404,15 @@
 
     <div class="der">
         <span class="lineas-span"><p class="texto-span">Formas de pago:</p><i class="fa-solid fa-credit-card"></i><i class="fa-solid fa-money-bill-transfer"></i><i class="fa-regular fa-money-bill-1"></i> </span>
-
+        <div id="cotizacion"  >
+            <div id="ars-to-usd"></div>
+            <div id="ars-to-brl"></div>
+            <div id="usd-to-uyu"></div>
+           </div>
        </div>
+
+      
+      
 
        <div class="logo"><a id="logo-footer" href="#header"><img style="width: 20px; padding: 0;" src="/media/logo1024px.png" alt="logo-pizeria"></a>
         <p> La Nonna pizzeria Copyright © 2023</p>

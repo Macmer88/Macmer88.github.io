@@ -98,7 +98,7 @@ function cerrarCarta(){
     }
 }
 
-//validacion del formulario
+//validacion del formulario 
 const btnEnviar = document.querySelector('#btn-enviar');
 
 function validacion(){
@@ -135,6 +135,25 @@ function validacion(){
 
      return true;
 }
+
+
+//Funcion que llama a la API y muestra cotizaciones de divisas
+fetch('https://openexchangerates.org/api/latest.json?app_id=7496c72487724a238e80189324d7a83e')
+  .then(response => response.json())
+  .then(data => {
+    const ArsToUsd = (data.rates.USD / data.rates.ARS).toFixed(4);
+    const ArsToBrl = (data.rates.BRL / data.rates.ARS).toFixed(3);
+    const ArsToUyu = (data.rates.UYU / data.rates.ARS).toFixed(2);
+
+    const ArsToUsdElement = document.getElementById('ars-to-usd');
+    const ArsToBrlElement = document.getElementById('ars-to-brl');
+    const ArsToUyuElement = document.getElementById('usd-to-uyu');
+    
+
+    ArsToUsdElement.innerHTML = `USD: ${ArsToUsd}`;
+    ArsToBrlElement.innerHTML = `BRL: ${ArsToBrl}`;
+    ArsToUyuElement.innerHTML = `UYU: ${ArsToUyu}`;
+  });
 
 
 
