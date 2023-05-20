@@ -98,7 +98,7 @@ function cerrarCarta(){
     }
 }
 
-//validacion del formulario
+//validacion del formulario 
 const btnEnviar = document.querySelector('#btn-enviar');
 
 function validacion(){
@@ -135,6 +135,7 @@ function validacion(){
 
      return true;
 }
+
 
 //Funcion que llama a la API y muestra cotizaciones de divisas
 fetch('https://openexchangerates.org/api/latest.json?app_id=7496c72487724a238e80189324d7a83e')
